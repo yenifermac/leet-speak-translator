@@ -1,0 +1,279 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+
+@font-face {
+  font-family: 'Atari';
+  src: 
+       url('Atari.woff') format('woff');
+}
+
+h1 {
+  font-family: 'Atari', sans-serif;
+  
+}
+
+.portada{
+
+  background-color: black;
+  width: 100%;
+  height: 750px;
+  text-align: center;
+}
+
+.portada .titulo {
+
+  display: block;
+  color: #22ee22;
+  font-size: 35px;
+  line-height:100px;
+  text-transform: uppercase;
+  padding-top: 200px;
+}
+
+.portada .parrafo{
+  font-family: sans-serif;
+  margin-top: 132px;
+  color: white;
+  line-height: 40px;
+}
+
+.portada .parrafo-white{
+  font-family: 'Atari', sans-serif;
+  font-size: 15px;
+}
+
+.portada .parrafo a{
+
+  color: #22ee22;
+}
+
+@keyframes blinker {
+  0% {text-shadow: 0 0 2px #22ee22;}
+  50% {text-shadow: 0 0 15px #22ee22;}
+  100% {text-shadow: 0 0 2px #22ee22;}
+}
+
+.titulo .blinking  {
+  color: #22ee22;
+
+  text-shadow:0 0 2px #22ee22;
+  animation: blinker 1.1s infinite;
+}
+
+.starPortada {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  animation: twinkle 1.5s infinite;
+}
+
+.starHistory {
+ position: relative;
+  width: 2px;
+  height: 2px;
+  background: white;
+  animation: twinkle 1.5s infinite;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+.menu{
+
+  background-color: white;
+  width: 100%;
+  height: 630px;
+  border-bottom-style: dashed ;
+  border-bottom-width: 7px;
+  
+  
+  
+}
+
+.menu h3{
+
+  color: #22ee22;
+  font-size: 35px;
+   height: 110px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.menu ul li{
+ 
+  height: 90px;
+  text-decoration: none;
+  border-bottom: 1px solid  rgb(233, 233, 233);
+  background-color: white;
+
+}
+
+.menu ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(63, 58, 58);
+  text-decoration: none;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  transition: background-color .2s ease-out, color .2s ease-out;
+}
+
+
+/* .menu ul li a:active, a:hover {
+  outline: 0;
+  
+} */
+
+.menu  ul li :hover {
+  background-color: #22ee22;
+}
+
+
+.menu ul .source{
+
+  border-bottom: 0;
+}
+
+
+
+.leet-speak{
+
+  width: 1150px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.history{
+  background-color: black;
+  height: 1100px;
+
+}
+
+.history h3{
+
+  color: #22ee22;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 65px;
+  text-transform: uppercase;
+  
+}
+.history p{
+  margin-top: 50px;
+  color: white;
+  text-align: justify;
+  line-height: 28px;
+}
+
+.history h4{
+
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-size: 33px;
+  text-transform: uppercase;
+}
+
+.history .history-description {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 20px;
+ 
+}
+
+.history .history-description p{
+  width: 560px;
+}
+
+.image{
+
+  background-image: url(./img/leet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  background-attachment:fixed
+}
+
+.leetTranslate{
+  height: 800px;
+  background: black;
+ 
+}
+.leetTranslate .section-leetTranslate{
+  
+  width: 1150px;
+  color: white;
+  margin: auto;
+}
+
+.leetTranslate .section-leetTranslate h3{
+
+  color: #22ee22;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.leetTranslate .section-leetTranslate p{
+
+  margin-top: 90px;
+  line-height: 30px;
+  font-size: 22px;
+  text-align: justify;
+
+}
+
+.leet-TexTranslate{
+
+  margin-top: 30px;
+
+
+}
+
+.texTranslate{
+
+  width: 1150px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+
+.texTranslate:focus {
+  box-shadow: 0 0 3px #9ecaed;
+  outline: none;
+}
+.formTexTranslate{
+
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  
+}
+
+.formTexTranslate input{
+
+  margin-left: 15px;
+  margin-right: 5px;
+ 
+  
+}
